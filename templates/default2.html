@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+{% for name in username %}
+    {{name.username}} | {{name.sponsor}} | {{name.activated}}<br> 
+{%endfor%}
+{%endblock%}

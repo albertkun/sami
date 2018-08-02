@@ -1,0 +1,16 @@
+{% from "_formhelpers.html" import render_field %}
+<form method=post>
+  <dl>
+    {{ render_field(form.username) }}
+    {{ render_field(form.email) }}
+    Select Sponsor:
+    <select name='groupname'>
+      {% for each in groups %}
+      <option value="{{each.groupname}}">{{each.groupname}}</option>
+      {% endfor %}
+    </select>
+    {{ render_field(form.password) }}
+
+  </dl>
+  <p><input type=submit value=Register>
+</form>

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+Welcome {{groupname}}!<br>
+Here are your active users: <br>
+    {% for name in username %}
+    <ul>{{name.username}}</ul><br> 
+
+{%endfor%}
+{%endblock%}

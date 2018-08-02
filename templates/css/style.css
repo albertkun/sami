@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Proxima Nova";
+    src: url(proxima_nova.ttf) format("truetype");
+}
+
+* {
+    
+    font-family: "Proxima Nova", Verdana, Tahoma;
+
+}

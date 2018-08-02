@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "Proxima Nova";
+    src: url(proxima_nova.ttf) format("truetype");
+}
+
+
+body { 
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "content content";
+    grid-template-rows: 80px 1fr;  
+    grid-template-columns: 1.60fr 1fr;
+    grid-row-gap: .5px;
+    grid-column-gap: .5px;
+    height: 100vh;
+    /* margin: 100; */
+    font-family: 'Proxima Nova', arial !important;
+    font-style: normal;
+    overflow-y: hidden;
+    font-weight: 300;
+    }
+ #header {
+     grid-area: header;
+     background-color: black;
+     color:white;
+     justify-content: center;
+     padding: 2em;
+     font-weight: 500;
+    }
+
+ #content {
+    grid-area: content;
+    padding: 2em;
+}
+
+ 
+* {
+    
+    font-family: "Proxima Nova", Verdana, Tahoma;
+
+}

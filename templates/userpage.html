@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+    #text{
+        display: grid;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    #userTable{
+        width: 50vw;
+        border-collapse: collapse;
+        border: .5px solid #3284bf;
+    }
+    #userTable td 
+    {
+        text-align: center; 
+        vertical-align: middle;
+    }
+
+</style>
+<div id=text>
+Welcome to your account {{user.firstname}}
+
+<h4>Account Information</h4>
+<table id="userTable">
+    <tr>
+        <td>
+            User Name:
+        </td>
+    <td>
+        {{user.username}}
+    </td>
+    </table>
+</div>
+
+{%endblock%}
+    
